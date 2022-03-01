@@ -124,7 +124,7 @@ public class MessageActivity extends AppCompatActivity {
         RequestBody requestBody = RequestBody.create(MediaType.parse("application/json; charset=utf8"), gson.toJson(notificationModel));
         Request request = new Request.Builder()
                 .header("Content-Type", "application/json")
-                .addHeader("Authorization", "key=AAAAodRo6Yw:APA91bFaC7ZbunrPNf535joYR36Xmm-WWPAJce2ktollQBStpzSeFGLHA_XikFTPfW8UzsjTMlPE_ZNSvQB_T6i3zE0mxxD9pfGW-xaylu25HFV3_-3aBlysROeRhI1w49DbEb6jT9Ou")
+                .addHeader("Authorization", "key={myKey}")
                 .url("https://fcm.googleapis.com/fcm/send")
                 .post(requestBody)
                 .build();
